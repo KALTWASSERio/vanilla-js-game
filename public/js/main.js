@@ -135,8 +135,10 @@ function () {
   _createClass(Bird, [{
     key: "addClickHandler",
     value: function addClickHandler() {
+      var _this = this;
+
       this.el.addEventListener('click', function () {
-        return console.log('black bird down');
+        _this.el.classList.add('hit');
       });
     }
   }, {
